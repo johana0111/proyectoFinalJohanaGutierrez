@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Final Johana Gutierrez</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="background">
+    <!--Comienza el encabezado-->
+    <header class="header">
+        <img class="logo" src="img/logo.png" alt="logo hypasia conversor de divisas" >
+        <p class="eslogan" >CONVERSOR DE MONEDAS EN TIEMPO REAL</p>
+    </header>
+
+    <!--Comienza el contenido principal-->
+    <main class="mainContainer">
+        <section  id="container">
+            <h2 class="titulos">Conversion de divisas</h2>
+            <div class="moneda">
+                
+                <!--Seleccionamos la moneda 1 -->
+                <select class="estilo2 textoComun "   name="opcion" id="desde"> 
+                    <option class="textoComun" value="UYU" selected>UYU</option>
+                    <option class="textoComun" value="USD">USD</option>
+                    <option class="textoComun" value="EUR">EUR</option>
+                    <option class="textoComun" value="CAD">CAD</option>
+                    <option class="textoComun" value="JPY">JPY</option>
+                    <option class="textoComun" value="MXN">MXN</option>
+                    <option class="textoComun" value="BRL">BRL</option>
+                    <option class="textoComun" value="CLP">CLP</option>
+                </select>
+                <input 
+                    class="monto estilo textoComun" 
+                    type="number"
+                     id="cantidad1" 
+                     min="1"
+                      max="100000"                    
+                    placeholder="0"  
+                    value="1"
+                    >
+            </div>
+            <input class="boton" type="button"  id="intercambio"   value=" ⇄">
+            <div class="moneda">
+                <!--Seleccionamos la moneda 2 -->
+                <select class="estilo2 textoComun"  name="opcion" id="hacia">
+                    <option class="textoComun" value="UYU" >UYU</option>
+                    <option class="textoComun" value="USD" selected>USD</option>
+                    <option class="textoComun" value="EUR">EUR</option>
+                    <option class="textoComun" value="CAD">CAD</option>
+                    <option class="textoComun" value="JPY">JPY</option>
+                    <option class="textoComun" value="MXN">MXN</option>
+                    <option class="textoComun" value="BRL">BRL</option>
+                    <option class="textoComun" value="CLP">CLP</option>
+                </select>
+                <input 
+                    class="monto estilo textoComun" 
+                    type="number"
+                     id="cantidad2"                 
+                    placeholder="0"  
+                    value="1"
+                    >
+            </div>
+    </section>
+    <section >
+        <div class="chartBox">
+            <h2 class="subTitulos">Valor Histórico</h2>
+            <canvas id="myChart" width="200px"></canvas> 
+        </div>   
+    </section>
+    </main>
+
+    <!--Comienza el pié de página-->
+    <footer class="footer"> 
+        <div class="footerNoticias">
+        <h3 class="titulos">Noticias</h3>
+        <p class="textoComun">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa modi porro
+             eveniet voluptates totam recusandae perferendis, nemo vitae quia, 
+            officia impedit facilis reprehenderit nisi at commodi omnis saepe! E
+            rror, assumenda?</p>     
+        </div>
+        <div class="footerCreditos">
+            <h3 class="titulos">Creditos</h3>
+            <p class="textoComun">Entrega final Johana Gutierrez </p>
+        </div>  
+     </footer> 
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
